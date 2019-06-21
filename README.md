@@ -14,3 +14,4 @@
 ![5](https://github.com/SkyoKen/LeapPiano/blob/master/image/5.jpg)
 ![6](https://github.com/SkyoKen/LeapPiano/blob/master/image/6.jpg)
 ![7](https://github.com/SkyoKen/LeapPiano/blob/master/image/7.jpg)
+### [MiniPiano（LeapMotion外す）](https://github.com/SkyoKen/MiniPiano)
