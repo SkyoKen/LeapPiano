@@ -11,7 +11,6 @@ public class Piano {
   private int channel;                 //MIDI channel
   private int velocity;                //MIDI velocity
 
-  private int pastPitch;
   private int nextPitch;
 
   public Piano(MidiBus mBus) {
@@ -31,16 +30,14 @@ public class Piano {
     this.channel = 0;           // 0 <= MIDI channel <= 15
     this.velocity = 100;        // 0 <= MIDI velocity <= 127
 
-    this.pastPitch = 0;
     this.nextPitch = 0;
   }
 
 
   public void  play(int num) {
     
-    this.pastPitch = this.nextPitch;
     this.nextPitch = num + 60;
     print(nextPitch + " \n");
-    if(this.pastPitch!=this.nextPitch)mBus.sendNoteOn(channel, nextPitch, velocity); // Send a Midi noteOn
+    mBus.sendNoteOn(channel, nextPitch, velocity); // Send a Midi noteOn
   }
 }

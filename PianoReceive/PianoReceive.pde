@@ -20,7 +20,7 @@ void setup() {
   piano= new Piano(mBus);
   
   //UDP
-  udp = new UDP(this,53131);
+  udp = new UDP(this,5313);
   udp.listen( true );
   
 }

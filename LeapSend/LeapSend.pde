@@ -4,11 +4,11 @@ LeapMotion leap;
 
 //LeapPiano
 LeapPiano lp;
-
+int t;
 void setup() {
   size(800, 500);
   background(255);
-
+t=0;
   //LeapMotion
   leap = new LeapMotion(this);
   
@@ -17,6 +17,7 @@ void setup() {
 }
 void draw() {
   lp.draw();
+
 }
 //通信テスト
 void keyPressed() {
